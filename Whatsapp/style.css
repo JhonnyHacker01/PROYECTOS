@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  background-color: #121b22;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-container {
+  width: 380px;
+  height: 600px;
+  background-color: #0b141a;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.chat-header {
+  background-color: #202c33;
+  color: #e9edef;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.chat-box {
+  flex: 1;
+  background-image: url('https://img.asmedia.epimg.net/resizer/v2/7L3CG752LVMWBPX75F4W3Y7QGI.jpg?auth=ec871d1544ec3b4b82f9812b5348db0ec2c7b514769a3250caca5f8d0af955b8&width=644');
+  background-size: cover;
+  background-position: center;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 70%;
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.message .time {
+  font-size: 11px;
+  color: #b6c3c6;
+  margin-left: 6px;
+  white-space: nowrap;
+  float: right;
+}
+
+.checks {
+  color: #53bdeb;
+  margin-left: 4px;
+}
+
+.right {
+  align-self: flex-end;
+  background-color: #005c4b;
+  color: white;
+  border-top-right-radius: 0;
+}
+
+.left {
+  align-self: flex-start;
+  background-color: #202c33;
+  color: #e9edef;
+  border-top-left-radius: 0;
+}
+
+.input-container {
+  display: flex;
+  background-color: #1e2a30;
+  padding: 10px;
+  border-top: 1px solid #2f3b42;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  background-color: #2a3942;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-container button {
+  margin-left: 6px;
+  background-color: #005c4b;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-container button:hover {
+  background-color: #0b806b;
+}
